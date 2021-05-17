@@ -167,7 +167,7 @@
       smtpmail-starttls-credentials '(("smtp.1and1.com" 587 nil nil))
       mu4e-sent-folder "/outlook/Sent"
       mu4e-drafts-folder "/outlook/Drafts"
-      mu4e-trash-folder "/outlook/Trash"
+      mu4e-trash-folder "/outlook/Deleted"
       mu4e-maildir-shortcuts
       '(("/outlook/inbox"       . ?i)
         ("/outlook/Sent"        . ?s)
