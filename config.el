@@ -302,6 +302,8 @@
   "Tangle current buffer asynchronously."
   (dt/org-babel-tangle-async (buffer-file-name)))
 
+(setq org-roam-directory "~/Org/")
+
 (map! :leader
       :desc "Copy to register"
       "r c" #'copy-to-register
