@@ -263,7 +263,9 @@
         org-ellipsis " ▼ "
         org-log-done 'time
         org-journal-dir "~/Org/journal/"
+        org-journal-date-prefix "#+TITLE: "
         org-journal-date-format "%B %d, %Y (%A) "
+        org-journal-time-prefix "* "
         org-journal-file-format "%Y-%m-%d.org"
         org-hide-emphasis-markers t
         ;; ex. of org-link-abbrev-alist in action
