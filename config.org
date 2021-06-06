@@ -284,17 +284,21 @@ I will be setting up mu4e to use three different email addresses.  This source b
 #+BEGIN_SRC emacs-lisp
 (add-to-list 'load-path "/usr/local/share/emacs/site-lisp/mu4e")
 ;;(require 'smtpmail)
+(auth-source-pass-enable)
 (setq user-mail-address "jamesmstone@hotmail.com"
       user-full-name  "James Stone"
       ;; I have my mbsyncrc in a different folder on my system, to keep it separate from the
       ;; mbsyncrc available publicly in my dotfiles. You MUST edit the following line.
-      ;; Be sure that the following command is: "mbsync -c ~/.config/mu4e/mbsyncrc -a"
+
+      auth-source-debug t
+      auth-source-do-cache nil
+      auth-sources '(password-store)
       mu4e-get-mail-command "mbsync -a"
       mu4e-update-interval  300
       mu4e-main-buffer-hide-personal-addresses t
       message-send-mail-function 'smtpmail-send-it
       starttls-use-gnutls t
-      smtpmail-starttls-credentials '(("smtp.1and1.com" 587 nil nil))
+      smtpmail-starttls-credentials '(("smtp-mail.outlook.com" 587 nil nil))
       mu4e-sent-folder "/outlook/Sent"
       mu4e-drafts-folder "/outlook/Drafts"
       mu4e-trash-folder "/outlook/Deleted"
@@ -320,9 +324,9 @@ The settings below are specific to each of three different email accounts.
          "Cheers\n"
          "James"))
      (user-mail-address "jamesmstone@hotmail.com")
-     (smtpmail-default-smtp-server "smtp.domain.com")
-     (smtpmail-smtp-server "smtp.domain.com")
-     (smtpmail-smtp-user "acc1@domain.com")
+     (smtpmail-default-smtp-server "smtp-mail.outlook.com")
+     (smtpmail-smtp-server "smtp-mail.outlook.com")
+     (smtpmail-smtp-user "jamesmstone@hotmail.com")
      (smtpmail-stream-type starttls)
      (smtpmail-smtp-service 587))
     ("exchange"
@@ -348,9 +352,9 @@ The settings below are specific to each of three different email accounts.
          "Cheers\n"
          "James\n"))
      (user-mail-address "jamesmstone711@gmail.com")
-     (smtpmail-default-smtp-server "smtp.domain.com")
-     (smtpmail-smtp-server "smtp.domain.com")
-     (smtpmail-smtp-user "acc3@domain.com")
+     (smtpmail-default-smtp-server "smtp-mail.outlook.com")
+     (smtpmail-smtp-server "smtp-mail.outlook.com")
+     (smtpmail-smtp-user "jamesmstone711@gmail.com")
      (smtpmail-stream-type starttls)
      (smtpmail-smtp-service 587))))
 #+END_SRC
