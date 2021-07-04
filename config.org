@@ -22,6 +22,7 @@
 - [[#open-specific-files][OPEN SPECIFIC FILES]]
 - [[#org-mode][ORG MODE]]
   - [[#roam][Roam]]
+- [[#projectile][PROJECTILE]]
 - [[#registers][REGISTERS]]
 - [[#shells][SHELLS]]
 - [[#splits][SPLITS]]
@@ -581,6 +582,14 @@ Org roam brings similar functionality of ROAM to Org mode.
 
 #+END_SRC
 
+* PROJECTILE
+Projectile is the project management library I use.
+
+#+BEGIN_SRC emacs-lisp
+
+(setq projectile-project-search-path '("~/"))
+
+#+END_SRC
 
 * REGISTERS
 Emacs registers are compartments where you can save text, rectangles and positions for later use. Once you save text or a rectangle in a register, you can copy it into the buffer once or many times; once you save a position in a register, you can jump back to that position once or many times.  The default GNU Emacs keybindings for these commands (with the exception of counsel-register) involves 'C-x r' followed by one or more other keys.  I wanted to make this a little more user friendly, and since I am using Doom Emacs, I choose to replace the 'C-x r' part of the key chords with 'SPC r'.

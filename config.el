@@ -408,6 +408,8 @@
 
 (setq org-roam-directory "~/Org/")
 
+(setq projectile-project-search-path '("~/"))
+
 (map! :leader
       :desc "Copy to register"
       "r c" #'copy-to-register
