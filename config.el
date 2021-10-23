@@ -465,7 +465,8 @@
       :desc "Clone indirect buffer other window"
       "b c" #'clone-indirect-buffer-other-window)
 
-(setq telega-use-docker t)
+(setq telega-use-docker t
+      telega-use-images t)
 
 (map! :leader
       :desc "Winner redo"

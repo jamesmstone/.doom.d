@@ -680,7 +680,8 @@ I set splits to default to opening on the right using 'prefer-horizontal-split'.
 * TELEGA
 
 #+BEGIN_SRC emacs-lisp
-(setq telega-use-docker t)
+(setq telega-use-docker t
+      telega-use-images t)
 #+END_SRC
 
 
