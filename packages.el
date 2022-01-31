@@ -11,8 +11,7 @@
 ;;(package! elim)
 (package! org-bullets)
 (package! elfeed-goodies)
-(package! slack
- :recipe (:host github :repo "aculich/emacs-slack" :branch "cookie"))
+(package! slack)
 (package! ovpn-mode)
 (package! telega)
 (package! excorporate)
