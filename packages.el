@@ -15,6 +15,8 @@
 (package! ovpn-mode)
 (package! telega)
 (package! excorporate)
+(package! emacs-spotify
+  :recipe (:host github :repo "SnootierMoon/emacs-spotify"))
 
 ;; To install a package directly from a remote git repo, you must specify a
 ;; `:recipe'. You'll find documentation on what `:recipe' accepts here:
