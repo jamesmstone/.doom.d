@@ -251,6 +251,7 @@ An RSS newsfeed reader for Emacs.
 (setq elfeed-feeds (quote
                     (("https://www.reddit.com/r/linux.rss" reddit linux)
                      ("https://www.reddit.com/r/commandline.rss" reddit linux)
+                     ("https://stallman.org/rss/rss.xml" news foss gnu)
                      ("https://www.reddit.com/r/emacs.rss" reddit linux)
                      ("https://www.gamingonlinux.com/article_rss.php" gaming linux)
                      ("https://hackaday.com/blog/feed/" hackaday linux)
