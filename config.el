@@ -159,6 +159,7 @@
 
 ;;      (advice-add #'elfeed-goodies/entry-line-draw :override #'ap/elfeed-goodies/entry-line-draw)
 
+(add-hook 'elfeed-search-mode-hook 'elfeed-update)
 (add-hook 'elfeed-new-entry-hook
           (elfeed-make-tagger :before "2 weeks ago"
                               :remove 'unread))
