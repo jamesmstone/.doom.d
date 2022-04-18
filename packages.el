@@ -11,12 +11,16 @@
 ;;(package! elim)
 (package! org-bullets)
 (package! elfeed-goodies)
-(package! slack)
+(package! slack
+  :recipe (:host github :repo "isamert/emacs-slack" :branch "fix-curl-downloader"))
 (package! ovpn-mode)
 (package! telega)
 (package! excorporate)
 (package! emacs-spotify
   :recipe (:host github :repo "SnootierMoon/emacs-spotify"))
+(when (package! emacs-spotify)
+  (package! ol-emacs-slack
+    :recipe (:host github :repo "ag91/ol-emacs-slack")))
 
 ;; To install a package directly from a remote git repo, you must specify a
 ;; `:recipe'. You'll find documentation on what `:recipe' accepts here:
