@@ -21,7 +21,7 @@
 (when (package! emacs-spotify)
   (package! ol-emacs-slack
     :recipe (:host github :repo "ag91/ol-emacs-slack")))
-
+(package! forge :pin "0ca0ca8ac55f46f48a27cb8a690078380f6d5703") ;; pin forge as per https://github.com/magit/forge/issues/491#issuecomment-1113948935
 ;; To install a package directly from a remote git repo, you must specify a
 ;; `:recipe'. You'll find documentation on what `:recipe' accepts here:
 ;; https://github.com/raxod502/straight.el#the-recipe-format
