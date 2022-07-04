@@ -430,20 +430,20 @@ The settings below are specific to each of three different email accounts.
      (smtpmail-smtp-user "jamesmstone@hotmail.com")
      (smtpmail-stream-type starttls)
      (smtpmail-smtp-service 587))
-    ("exchange"
-     (mu4e-sent-folder "/exchange/Sent Items")
-     (mu4e-drafts-folder "/exchange/Drafts")
-     (mu4e-trash-folder "/exchange/Deleted Items")
-     (mu4e-compose-signature
-       (concat
-         "James Stone\n"
-         "james@renewabeenergyhub.com.au"))
-     (user-mail-address "james.stone@traditionasia.com")
-     (smtpmail-default-smtp-server "smtp.domain.com")
-     (smtpmail-smtp-server "smtp.domain.com")
-     (smtpmail-smtp-user "acc1@domain.com")
-     (smtpmail-stream-type starttls)
-     (smtpmail-smtp-service 587))
+    ;; ("exchange"
+    ;;  (mu4e-sent-folder "/exchange/Sent Items")
+    ;;  (mu4e-drafts-folder "/exchange/Drafts")
+    ;;  (mu4e-trash-folder "/exchange/Deleted Items")
+    ;;  (mu4e-compose-signature
+    ;;    (concat
+    ;;      "James Stone\n"
+    ;;      "james@renewabeenergyhub.com.au"))
+    ;;  (user-mail-address "james.stone@traditionasia.com")
+    ;;  (smtpmail-default-smtp-server "smtp.domain.com")
+    ;;  (smtpmail-smtp-server "smtp.domain.com")
+    ;;  (smtpmail-smtp-user "acc1@domain.com")
+    ;;  (smtpmail-stream-type starttls)
+    ;;  (smtpmail-smtp-service 587))
     ("gmail"
      (mu4e-sent-folder "/gmail/sent")
      (mu4e-drafts-folder "/gmail/Drafts")
